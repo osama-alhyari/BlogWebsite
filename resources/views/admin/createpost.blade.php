@@ -1,30 +1,33 @@
+<!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-
-    {{-- CKEditor CDN --}}
-    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.1/classic/ckeditor.js"></script>
-
-</head>
+@extends('layout.app')
+@section('content')
 
 <body>
+    <header class="masthead">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="site-heading">
+                        <h1 class="subheading">Create Post</h1>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
     <div class="container mt-5">
         <div class="row">
             <div class="col-xl-12 text-right">
                 <a href="{{ url('posts') }}" class="btn btn-danger"> Back </a>
             </div>
         </div>
-        <form action="" method="POST">
+        <form action="addpost" method="POST">
             @csrf
             <div class="row">
                 <div class="col-xl-8 col-lg-8 col-sm-12 col-12 m-auto">
                     <div class="card shadow">
-                        <div class="card-header">
-                            <h4 class="card-title"> Laravel 10 Install CKEditor Example Tutorial </h4>
-                        </div>
                         <div class="card-body">
                             <div class="form-group">
                                 <label> Title </label>
@@ -44,17 +47,9 @@
         </form>
     </div>
 
-    <script>
-        ClassicEditor
-            .create(document.querySelector('#body'))
-            .catch(error => {
-                console.error(error);
-            });
-    </script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
 </body>
+@endsection
+
 
 </html>
