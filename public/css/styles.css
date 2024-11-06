@@ -4147,6 +4147,8 @@ textarea.form-control-lg {
   color: var(--bs-card-cap-color);
   background-color: var(--bs-card-cap-bg);
   border-top: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  display: flex;
+  justify-content: flex-end;
 }
 .card-header-tabs {
   margin-right: calc(-0.5 * var(--bs-card-cap-padding-x));
@@ -10555,9 +10557,6 @@ hr {
   opacity: 1;
 }
 
-p {
-  margin: 2rem 0;
-}
 p a {
   text-decoration: underline;
 }
@@ -10735,8 +10734,8 @@ header.masthead .post-heading .meta a {
 }
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 0rem;
   }
   header.masthead .page-heading h1, header.masthead .page-heading .h1,
   header.masthead .site-heading h1,
@@ -10766,6 +10765,10 @@ header.masthead .post-heading .meta a {
   text-align: center;
 }
 
+.post-preview{
+  display: inline;
+}
+
 .post-preview > a {
   color: #212529;
 }
@@ -10777,6 +10780,8 @@ header.masthead .post-heading .meta a {
   font-size: 1.875rem;
   margin-top: 1.875rem;
   margin-bottom: 0.625rem;
+  word-wrap: break-word;
+  white-space: normal;
 }
 .post-preview > a > .post-subtitle {
   font-weight: 300;
@@ -10794,5 +10799,17 @@ header.masthead .post-heading .meta a {
 @media (min-width: 992px) {
   .post-preview > a > .post-title {
     font-size: 2.25rem;
+    word-wrap: break-word;
+    white-space: normal;
   }
+}
+
+#paginationBlock > nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#paginationBlock > nav > span{
+  visibility: hidden;
 }

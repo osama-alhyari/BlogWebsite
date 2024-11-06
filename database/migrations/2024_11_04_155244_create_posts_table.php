@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
-            $table->dateTime('date_created')->default(now());
+            $table->dateTime('date_created');
             $table->string('title');
             $table->string('subtitle')->nullable();
             $table->text('content');

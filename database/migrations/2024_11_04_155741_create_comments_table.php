@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('comments', function (Blueprint $table) {
             $table->id();
-            $table->dateTime('date_created')->default(now());
+            $table->dateTime('date_created');
             $table->longText('content');
             $table->boolean('is_deleted')->default(0);
             $table->unsignedBigInteger('post_id');

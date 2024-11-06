@@ -39,11 +39,16 @@ class AuthController extends Controller
         return redirect()->route('getPosts'); // Redirect user to landing page
     }
 
-    public function authentication() // login
+    public function authentication(Request $request) // login
     {
         if (Auth::check()) { // check if user is already logged in
             return redirect()->route('getPosts');
         }
+
+        if ($request->filled('post_id')) {
+            session(['post_id' => $request->post_id]);
+        }
+
         return view('login');
     }
 
@@ -56,7 +61,9 @@ class AuthController extends Controller
 
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
-
+            if (session()->has('post_id')) {
+                return redirect()->route('showPost', session('post_id'));
+            }
             return redirect()->route('getPosts');
         }
 
@@ -74,6 +81,6 @@ class AuthController extends Controller
         $request->session()->regenerateToken();
 
         // Redirect the user to the login page or homepage
-        return redirect('/posts');
+        return redirect('/home');
     }
 }
