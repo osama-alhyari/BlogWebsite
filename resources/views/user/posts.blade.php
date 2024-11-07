@@ -38,12 +38,18 @@
                         {{$post->date_created}}
                     </p>
                 </div>
+                @auth
+                @if(Auth::user()->is_admin)
+
                 <div class="d-flex justify-content-between">
-                    <button type="button" class="btn btn-secondary">Edit Post</button>
+                    <a href="{{route('editPost',$post->id)}}" type="button" class="btn btn-secondary">Edit Post</a>
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#deletePostModal" data-post-id="{{ $post->id }}">
                         Delete Post
                     </button>
                 </div>
+                @endif
+                @endauth
+
                 <!-- Divider-->
                 <hr class="my-4" />
                 @endforeach

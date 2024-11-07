@@ -17,14 +17,15 @@
         </div>
     </header>
     <div class="container my-5">
-        <form id="postForm" action="post" method="POST">
+        <form id="postForm" action="{{ route('storePost') }}" method="POST" enctype="multipart/form-data">
             @csrf
             <div class="row mb-3">
                 <div class="col-xl-8 col-lg-8 col-sm-12 col-12 m-auto">
                     <div class="card shadow">
                         <div class="card-body">
-                            <a href="{{ url('posts') }}" class="btn btn-danger mb-3"> Back </a>
+                            <a href="{{ url('home') }}" class="btn btn-danger mb-3">Back</a>
 
+                            <!-- Title Input -->
                             <div class="form-group mb-3">
                                 <label class="mb-1">Post Title</label>
                                 <input type="text" class="form-control" name="title" placeholder="Enter The Title">
@@ -32,21 +33,35 @@
                                 <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
+
+                            <!-- Subtitle Input -->
                             <div class="form-group mb-3">
-                                <label class="mb-1">Post Sub Title (Optional)</label>
-                                <input type="text" class="form-control" name="subtitle" placeholder="Enter The Sub Title">
+                                <label class="mb-1">Post Subtitle (Optional)</label>
+                                <input type="text" class="form-control" name="subtitle" placeholder="Enter The Subtitle">
                                 @error('subtitle')
                                 <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
+
+                            <!-- Content Input -->
                             <div class="form-group mb-3">
                                 <label class="mb-1">Post Content</label>
-                                <textarea class="form-control" id="body" placeholder="Enter The Post Content" name="content"></textarea>
+                                <textarea class="form-control" id="body" name="content" placeholder="Enter The Post Content"></textarea>
                                 @error('content')
                                 <span class="text-danger">{{ $message }}</span>
                                 @enderror
                             </div>
+
+                            <!-- Image Input -->
+                            <div class="form-group mb-3">
+                                <label class="mb-1">Post Image</label>
+                                <input type="file" class="form-control" name="image" accept="image/*">
+                                @error('image')
+                                <span class="text-danger">{{ $message }}</span>
+                                @enderror
+                            </div>
                         </div>
+
                         <div class="card-footer">
                             <button type="submit" class="btn btn-success float-right">Save</button>
                         </div>

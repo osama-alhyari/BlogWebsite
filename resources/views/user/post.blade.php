@@ -6,7 +6,7 @@
 
 <body>
     <!-- Page Header-->
-    <header class="masthead" style="background-image: url('assets/img/post-bg.jpg')">
+    <header class="masthead" style="background-image: url('{{asset($post->first()->image)}}')">
         <div class="container position-relative px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8">
@@ -35,6 +35,7 @@
 
                             @foreach($post->first()->comments as $comment)
                             <div class="card mb-4">
+                                @auth
                                 @if($comment->user->id === Auth::user()->id)
                                 <div class="card-title d-flex justify-content-end pe-1 pt-1">
                                     <!-- Edit Icon -->
@@ -51,12 +52,13 @@
                                         </svg>
                                     </a>
                                 </div>
+                                @endauth
                                 @endif
                                 <div class="card-body">
                                     <p>{{$comment->content}}</p>
                                     <div class="d-flex justify-content-between">
                                         <div class="d-flex flex-row align-items-center">
-                                            <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar" width="25"
+                                            <img src="{{asset('user.png')}}" alt="avatar" width="25"
                                                 height="25" />
                                             <p class="small mb-0 ms-2">{{$comment->user->name}}</p>
                                         </div>

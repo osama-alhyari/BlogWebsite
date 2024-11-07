@@ -11,7 +11,7 @@ class Comment extends Model
 
     public $timestamps = false;
 
-    protected $fillable = ['content', 'post_id', 'user_id'];
+    protected $fillable = ['content', 'post_id', 'user_id', 'is_deleted', 'date_created'];
 
     public function post()
     {

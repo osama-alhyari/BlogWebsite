@@ -38,8 +38,8 @@ Route::get('/', function () {
     return view('user.posts');
 });
 
-Route::post('/post', [PostController::class, 'store']);
-Route::get('/post', [PostController::class, 'create']);
+Route::post('/post', [PostController::class, 'store'])->name('storePost');
+Route::get('/post', [PostController::class, 'create'])->name('createPost');
 Route::get('/post/{id}', [PostController::class, 'show'])->name('showPost');
 Route::post('/register', [AuthController::class, 'registerUser'])->name('registerUser');
 Route::get('/register', [AuthController::class, 'registration'])->name('registration');
@@ -48,8 +48,11 @@ Route::post('/login', [AuthController::class, 'authenticate'])->name('authentica
 Route::get('/', [PostController::class, 'index'])->name('getPosts');
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout')->middleware('auth');
 Route::get('/dashboard', [PostController::class, 'dashboard'])->name('dashboard');
-Route::get('/home', [PostController::class, 'home'])->name('home');
+Route::get('/home', [PostController::class, 'index'])->name('home');
 Route::post('/comment', [CommentController::class, 'store'])->name('storeComment');
 Route::put('/comment/update', [CommentController::class, 'update'])->name('updateComment');
 Route::delete('/comment/delete', [CommentController::class, 'destroy'])->name('deleteComment');
 Route::delete('/posts/{id}', [PostController::class, 'destroy'])->name('deletePost');
+Route::get('/edit/{id}', [PostController::class, 'edit'])->name('editPost');
+Route::patch('/post/{id}', [PostController::class, 'update'])->name('updatePost');
+Route::get('/random', [PostController::class, 'random'])->name('randomPost');
