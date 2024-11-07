@@ -3,12 +3,7 @@
 
 <div align="center">
 
-**
-[🏃‍♂️ Run This Project](https://github.com/osama-alhyari/BlogWebsite?tab=readme-ov-file#-run-this-project) • 
-[📈 Entity Relationship Diagram](https://github.com/osama-alhyari/BlogWebsite?tab=readme-ov-file#-entity-relationship-diagram) • 
-
-[📺 Views](https://github.com/osama-alhyari/BlogWebsite?tab=readme-ov-file#-views) 
-**
+**[🏃‍♂️ Run This Project](https://github.com/osama-alhyari/BlogWebsite?tab=readme-ov-file#-run-this-project)•[📈 Entity Relationship Diagram](https://github.com/osama-alhyari/BlogWebsite?tab=readme-ov-file#-entity-relationship-diagram)•[📺 Views](https://github.com/osama-alhyari/BlogWebsite?tab=readme-ov-file#-views)**
 
 </div>
 
