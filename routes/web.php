@@ -47,7 +47,6 @@ Route::get('/login', [AuthController::class, 'authentication'])->name('authentic
 Route::post('/login', [AuthController::class, 'authenticate'])->name('authenticate');
 Route::get('/', [PostController::class, 'index'])->name('getPosts');
 Route::get('/logout', [AuthController::class, 'logout'])->name('logout')->middleware('auth');
-Route::get('/dashboard', [PostController::class, 'dashboard'])->name('dashboard');
 Route::get('/home', [PostController::class, 'index'])->name('home');
 Route::post('/comment', [CommentController::class, 'store'])->name('storeComment');
 Route::put('/comment/update', [CommentController::class, 'update'])->name('updateComment');
