@@ -1,22 +1,16 @@
 <h1 align='center'> Dardos Blogs </h1>
 <h3 align='center'> By Osama Alhyari </h3>
 
-# Table of Contents
-1. [🏃‍♂️ Run This Project](#run-this-project)
-2. [📈 Entity Relationship Diagram](#entity-relationship-diagram)
-3. [📺 Views](#views)
-   - [🖥️ Desktop Views](#desktop-views)
-      - [Admin Landing](#admin-landing-desktop)
-      - [User Landing](#user-landing-desktop)
-      - [Post View](#post-view-desktop)
-      - [Admin Edit Post](#admin-edit-post-desktop)
-      - [Post With Image](#post-with-image-desktop)
-   - [📱 Mobile Views](#mobile-views)
-      - [Admin Landing](#admin-landing-mobile)
-      - [User Landing](#user-landing-mobile)
-      - [Post View](#post-view-mobile)
-      - [Admin Edit Post](#admin-edit-post-mobile)
-      - [Post With Image](#post-with-image-mobile)
+<div align="center">
+
+**
+[🏃‍♂️ Run This Project](https://github.com/osama-alhyari/BlogWebsite?tab=readme-ov-file#-run-this-project) • 
+[📈 Entity Relationship Diagram](https://github.com/osama-alhyari/BlogWebsite?tab=readme-ov-file#-entity-relationship-diagram) • 
+
+[📺 Views](https://github.com/osama-alhyari/BlogWebsite?tab=readme-ov-file#-views) 
+**
+
+</div>
 
 # 🏃‍♂️ Run This Project
 Prerequisites to running this project : PHP , Composer , Node.js , NPM , A php development enviroment like XAMPP. A MySQL server : MySql Workbench or PhpMyAdmin will work.
