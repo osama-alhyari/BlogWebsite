@@ -1,6 +1,23 @@
 <h1 align='center'> Dardos Blogs </h1>
 <h3 align='center'> By Osama Alhyari </h3>
 
+# Table of Contents
+1. [🏃‍♂️ Run This Project](#run-this-project)
+2. [📈 Entity Relationship Diagram](#entity-relationship-diagram)
+3. [📺 Views](#views)
+   - [🖥️ Desktop Views](#desktop-views)
+      - [Admin Landing](#admin-landing-desktop)
+      - [User Landing](#user-landing-desktop)
+      - [Post View](#post-view-desktop)
+      - [Admin Edit Post](#admin-edit-post-desktop)
+      - [Post With Image](#post-with-image-desktop)
+   - [📱 Mobile Views](#mobile-views)
+      - [Admin Landing](#admin-landing-mobile)
+      - [User Landing](#user-landing-mobile)
+      - [Post View](#post-view-mobile)
+      - [Admin Edit Post](#admin-edit-post-mobile)
+      - [Post With Image](#post-with-image-mobile)
+
 # 🏃‍♂️ Run This Project
 Prerequisites to running this project : PHP , Composer , Node.js , NPM , A php development enviroment like XAMPP. A MySQL server : MySql Workbench or PhpMyAdmin will work.
 
@@ -37,3 +54,61 @@ Prerequisites to running this project : PHP , Composer , Node.js , NPM , A php d
 
 10) Run the final command to start the server:        
    `php artisan serve`
+
+# 📈 Entity Relatshionship Diagram
+![ER Diagram](./images/erd.png)
+
+# 📺 Views
+
+## 🖥️ Desktop
+<h6 align='center'> Admin Landing </h6>
+
+![Admin Home Desktop](./images/adminhomedesktop.png)
+
+
+<h6 align='center'> User Landing </h6>
+
+![User Home Desktop](./images/userhomedesktop.png)
+
+
+<h6 align='center'> Post </h6>
+
+![Post Desktop](./images/postdesktop.png)
+
+
+<h6 align='center'>Admin Edit Post </h6>
+
+![Edit Post Desktop](./images/editpost.png)
+
+
+<h6 align='center'>Post With A Post Image</h6>
+
+![Edit Post Desktop](./images/postimg.png)
+
+
+## 📱 Mobile
+<h6 align='center'> Admin Landing </h6>
+
+![Admin Home Mobile](./images/mobilehomeadmin.png)
+
+
+<h6 align='center'> User Landing </h6>
+
+![User Home Mobile](./images/mobilehomeuser.png)
+
+
+<h6 align='center'> Post </h6>
+
+![Post Mobile](./images/postmobile.png)
+
+
+<h6 align='center'>Admin Edit Post </h6>
+
+![Edit Post Mobile](./images/editpostmobile.png)
+
+
+<h6 align='center'>Post With A Post Image</h6>
+
+![Edit Post Mobile](./images/postimgmobile.png)
+
+
