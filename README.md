@@ -87,27 +87,27 @@ Prerequisites to running this project : PHP , Composer , Node.js , NPM , A php d
 
 
 ## 📱 Mobile
-<h6 align='center'> Admin Landing </h6>
+<h6 > Admin Landing </h6>
 
 ![Admin Home Mobile](./images/mobilehomeadmin.png)
 
 
-<h6 align='center'> User Landing </h6>
+<h6 > User Landing </h6>
 
 ![User Home Mobile](./images/mobilehomeuser.png)
 
 
-<h6 align='center'> Post </h6>
+<h6 > Post </h6>
 
 ![Post Mobile](./images/postmobile.png)
 
 
-<h6 align='center'>Admin Edit Post </h6>
+<h6 >Admin Edit Post </h6>
 
 ![Edit Post Mobile](./images/editpostmobile.png)
 
 
-<h6 align='center'>Post With A Post Image</h6>
+<h6 >Post With A Post Image</h6>
 
 ![Edit Post Mobile](./images/postimgmobile.png)
 
